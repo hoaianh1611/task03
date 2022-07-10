@@ -1,13 +1,12 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    width: $base-width;
-    margin: 0 auto 150px;
+    margin: 0 auto;
     display: inline;
+    position: relative;
 
     &__banner {
         margin: 0 auto;
-        position: relative;
         width: 100%;
         max-width: 1120px;
         padding-top: 100px;
@@ -20,8 +19,8 @@
 
     &__content {
         position: absolute;
-        bottom: 76px;
-        left: 171px;
+        top: 34.4%;
+        left: 29.2%;
         text-align: center;
         line-height: 1;
 
@@ -32,17 +31,20 @@
             letter-spacing: 1.7px;
         }
 
+        img {
+            margin-bottom: 12px;
+        }
+
         h4 {
-            font-size: 1.8rem;
-            word-spacing: 0.5px;
-            margin-bottom: 26px;
-            line-height: 1.5;
+            font-size: 1.7rem;
+            letter-spacing: 0.05rem;
+            margin-bottom: 30px;
             font-weight: lighter;
         }
 
         p {
             font-size: 1.7rem;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.015rem;
             line-height: 1.5;
             margin-bottom: 7px;
         }
@@ -51,7 +53,7 @@
             font-size: 3rem;
             font-weight: 400;
             margin-bottom: 42px;
-            letter-spacing: 1.7px;
+            letter-spacing: 0.3rem;
         }        
 
         a {
@@ -62,8 +64,48 @@
             text-align: center;
             font-size: 2.5rem;
             cursor: pointer;
-            letter-spacing: 6.5px;
+            letter-spacing: 0.68rem;
         }
+    }
+
+    &__droplayer {
+        
+    }
+
+    &__droplayer1 {
+        position: absolute;
+        top: 10%;
+        left: 27.8%;
+    }
+
+    &__droplayer2 {
+        position: absolute;
+        top: 5.5%;
+        left: 57.5%;
+    }
+    
+    &__droplayer3 {
+        position: absolute;
+        top: 13.7%;
+        right: 12.3%;
+    }
+    
+    &__droplayer4 {
+        position: absolute;
+        top: 72.5%;
+        left: 15.3%;
+    }
+    
+    &__droplayer5 {
+        position: absolute;
+        top: 91.5%;
+        left: 28.6%;
+    }
+    
+    &__droplayer6 {
+        position: absolute;
+        top: 89.5%;
+        right: 21.5%;
     }
 }
 /* Main menu
@@ -88,4 +130,12 @@
         text-transform: capitalize;
         color: #fff;
     }
+}
+
+.c-gnav--icon {
+    display: none;
+}
+
+.c-gnav--mobile {
+    display: none;
 }

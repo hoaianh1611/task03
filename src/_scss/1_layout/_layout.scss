@@ -8,7 +8,6 @@ body {
     line-height: 1.5;
     background: url("../_public/assets/img/bg-image.jpg") repeat center;
     background-size: cover;
-    // position: relative;
     @include sp {
         min-width: 320px;
     }
@@ -20,17 +19,35 @@ body {
     background-color: #fff;
 }
 
+.l-leaves {
+    &__first {
+        position: absolute;
+        top: 0;
+        left: 35.7%;
+        max-height: 211px;
+        height: 100%;
+    }
+
+    &__second {
+        position: absolute;
+        top: 56%;
+        right: 0;
+    }
+    
+}
 //-------------------------------------------------------
 main {
-    // padding: 0px 0 100px;
+    
 }
 
 section {
-    padding: 8px 0;
+    // margin-top: 60px;
 }
 
 //-------------------------------------------------------
 .l-container {
+    width: 100%;
+    max-width: 1030px;
     margin: 0 auto;
 }
 //-------------------------------------------------------
