@@ -2,102 +2,100 @@
 Css of home page
 ------------------------------------------------------------*/
 .p-top {
-    margin: 75px auto 100px;
-    
-    /*---------------part1------------------------*/
-    .p-useage {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1120px;
-        margin-bottom: 94px;
-    
-        h4 {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 400;
-            letter-spacing: 2px;
-            margin-bottom: 2px;
-        }
+    margin: 75px auto 100px;  
+}
 
-        h2 {
-            text-align: center;
-            font-size: 4.48rem;
-            font-weight: bolder;
-            letter-spacing: 1.1rem;
-            line-height: 1;
-        }
+/*---------------part1------------------------*/
+.p-useage {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1120px;
+    margin-bottom: 94px;
 
-        &__productdisplay {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        &__item {
-            margin-bottom: 30px;
-
-            &:nth-child(1) {
-                margin-left: 80px;
-                position: relative;
-                top: 0;
-                left: 0;
-            }
-
-            &:nth-child(2) {
-                margin-left: 41px;
-                margin-top: 41px;
-            }
-
-            &:nth-child(3) {
-                margin-left: 37px;
-                margin-top: 41px;
-            }
-
-            &:nth-child(4) {
-                margin-left: 51px;
-                position: relative;
-                top: 0;
-                left: 0;
-            }
-
-            &:nth-child(5) {
-                margin-left: 91px;
-                margin-top: 61px;
-            }
-
-            &:nth-child(6) {
-                margin-left: 11px;
-                margin-top: 111px;
-                position: relative;
-                top: 0;
-                left: 0;
-            }
-
-            &:nth-child(7) {
-                margin-left: 82px;
-                margin-top: 84px;
-            }
-
-            &:nth-child(8) {
-                position: relative;
-                top: 0;
-                left: 0;
-            }
-        }
-
-        &__cmt {
-            width: 116px;
-            position: absolute;
-            // bottom: 110px;
-            bottom: 90px;
-        }
-
+    h4 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        margin-bottom: 2px;
     }
+
+    h2 {
+        text-align: center;
+        font-size: 4.48rem;
+        font-weight: bolder;
+        letter-spacing: 1.1rem;
+        line-height: 1;
+    }
+
+    &__productdisplay {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+
+        &:nth-child(1) {
+            margin-left: 80px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            margin-left: 41px;
+            margin-top: 41px;
+        }
+
+        &:nth-child(3) {
+            margin-left: 37px;
+            margin-top: 41px;
+        }
+
+        &:nth-child(4) {
+            margin-left: 51px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(5) {
+            margin-left: 91px;
+            margin-top: 61px;
+        }
+
+        &:nth-child(6) {
+            margin-left: 11px;
+            margin-top: 111px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(7) {
+            margin-left: 82px;
+            margin-top: 84px;
+        }
+
+        &:nth-child(8) {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__cmt {
+        position: absolute;
+        bottom: 90px;
+    }
+
 }
 
 .p-top1 {
     background-color: #f5f4ee;
     padding-top: 69px;
-    padding-bottom: 107px;
+    padding-bottom: 108px;
 
     &__pointpart {
         margin-bottom: 80px;
@@ -165,7 +163,7 @@ Css of home page
         img:nth-child(odd) {
             border-radius: 2.6rem;
             background-color: transparent;
-            width: 100%;
+            max-width: 100%;
         }
 
         img:nth-child(even) {
@@ -180,7 +178,7 @@ Css of home page
     }
 
     &__pointover {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         width: 100%;
@@ -241,6 +239,10 @@ Css of home page
 
     }
 
+    &__pointover:nth-child(1) {
+        display: flex;
+    }
+
     &__footer {
         max-width: 1120px;
         width: 100%;
@@ -258,41 +260,42 @@ Css of home page
         p {
             text-align: center;
             font-size: 1.4rem;
-            // letter-spacing: 0.001rem;
         }
     }
 
     &__branding {
         display: flex;
+        column-gap: 25px;
+        row-gap: 25px;
     }
 
     &__logo {
         position: relative;
         width: 260px;
         height: 110px;
-        background-color: #fff;
-        border-radius: 1.6rem;
-        margin-bottom: 46px;
+        // background-color: #fff;
+        // border-radius: 1.6rem;
+        // margin-bottom: 45px;
 
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(3) {
-            margin-right: 20px;
+        img {
+            max-width: 100%;
+            border-radius: 1.5rem;
         }
 
-        img:first-child {
-            position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
 
-        img:last-child {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+        // img:first-child {
+        //     position: relative;
+        //     left: 50%;
+        //     top: 50%;
+        //     transform: translate(-50%, -50%);
+        // }
+
+        // img:last-child {
+        //     position: absolute;
+        //     right: 15px;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        // }
     }
 }
 
@@ -312,13 +315,13 @@ Css of home page
 
     &__qa--part {
         padding: 0 85px;
-        margin-bottom: 44px;
+        margin-bottom: 45px;
     }
 
     &__quest--part {
         display: flex;
         align-items: center;
-        margin-bottom: 8px;
+        margin-bottom: 7px;
 
         p {
             display: inline-block;
@@ -353,7 +356,7 @@ Css of home page
 
     &__ans--part {
         p {
-            letter-spacing: 0.14rem;
+            letter-spacing: 0.15rem;
         }
     }
 }
@@ -371,20 +374,22 @@ Css of home page
 
     &__content {
         margin: 0 85px 36px;
-        padding-bottom: 30px;
+        padding-bottom: 31px;
         position: relative;
         border-bottom: 1px solid #176b6a;
 
-        p {
-            letter-spacing: 0.135rem;
+        p:nth-child(2) {
+            letter-spacing: 0.133rem;
             max-width: 816px;
+            width: 100%;
+            line-height: 1.5;
         }
     }
 
     &__content--image {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 19px;
 
         img {
             border-radius: 10px;
@@ -393,10 +398,11 @@ Css of home page
     }
 
     &__des {
-        margin-left: 15px;
+        margin-left: 14px;
+        padding-top: 5px;
 
         p {
-            line-height: 1.1;
+            line-height: 1;
             letter-spacing: 0.15rem;
         }
 
@@ -414,5 +420,6 @@ Css of home page
         img {   
             height: 35px;
         }
+
     }
 }

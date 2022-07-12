@@ -2,15 +2,16 @@
 ------------------------------------------------------------*/
 .c-header {
     margin: 0 auto;
-    display: inline;
-    position: relative;
 
     &__banner {
+        position: relative;
         margin: 0 auto;
         width: 100%;
         max-width: 1120px;
         padding-top: 100px;
+    }
 
+    &__image {
         img:first-child {
             border-radius: 60px;
             width: 1120px;
@@ -20,7 +21,7 @@
     &__content {
         position: absolute;
         top: 34.4%;
-        left: 29.2%;
+        left: 15.5%;
         text-align: center;
         line-height: 1;
 
@@ -32,7 +33,13 @@
         }
 
         img {
-            margin-bottom: 12px;
+            margin-bottom: 11px;
+        }
+
+        .c-line1 {
+            width: 60px;
+            margin: 0 auto 23px;
+            border-bottom: 2px solid #000;
         }
 
         h4 {
@@ -59,55 +66,141 @@
         a {
             background-color: #25a989;
             border-radius: 100px;
-            padding: 10px 41px;
+            padding: 10px 43px;
             color: #fff;
             text-align: center;
             font-size: 2.5rem;
             cursor: pointer;
-            letter-spacing: 0.68rem;
+            letter-spacing: 0.65rem;
         }
     }
 
+    //Drop layer animation
     &__droplayer {
-        
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        transform: translateY(0%);
+        transition: all 2s ease-in-out;
+
     }
 
     &__droplayer1 {
-        position: absolute;
-        top: 10%;
-        left: 27.8%;
+        transform: translate(26.9%, 61%);
+        animation: move1 0.8s linear infinite;
     }
 
     &__droplayer2 {
-        position: absolute;
-        top: 5.5%;
-        left: 57.5%;
+        transform: translate(55.5%, -46%);
+        animation: move2 0.8s linear infinite;
     }
     
     &__droplayer3 {
-        position: absolute;
-        top: 13.7%;
-        right: 12.3%;
+        transform: translate(80.2%, -155%);
+        animation: move3 0.8s linear infinite;
     }
     
     &__droplayer4 {
-        position: absolute;
-        top: 72.5%;
-        left: 15.3%;
+        transform: translate(14.8%, 82%);
+        animation: move4 0.8s linear infinite;
     }
     
     &__droplayer5 {
-        position: absolute;
-        top: 91.5%;
-        left: 28.6%;
+        transform: translate(27.7%, 89.5%);
+        animation: move5 0.8s linear infinite;
     }
     
     &__droplayer6 {
-        position: absolute;
-        top: 89.5%;
-        right: 21.5%;
+        transform: translate(69.3%, -15%);
+        animation: move6 0.8s linear infinite;
     }
 }
+
+/* Drop animation
+------------------------------------------------------------*/
+@keyframes move1 {
+    0% {
+        transform: translate(26.9%, 61%);
+    }
+
+    50% {
+        transform: translate(26.9%, 68%);
+    }
+
+    100% {
+        transform: translate(26.9%, 61%);
+    }
+}
+@keyframes move2 {
+    0% {
+        transform: translate(55.5%, -46%);
+    }
+
+    50% {
+        transform: translate(55.5%, -51%);
+    }
+
+    100% {
+        transform: translate(55.5%, -46%);
+    }
+}
+@keyframes move3 {
+    0% {
+        transform: translate(80.2%, -155%);
+    }
+
+    50% {
+        transform: translate(80.2%, -148%);
+    }
+
+    100% {
+        transform: translate(80.2%, -155%);
+    }
+}
+
+@keyframes move4 {
+    0% {
+        transform: translate(14.8%, 82%);
+    }
+
+    50% {
+        transform: translate(14.8%, 87%);
+    }
+
+    100% {
+        transform: translate(14.8%, 82%);
+    }
+}
+
+@keyframes move5 {
+    0% {
+        transform: translate(27.7%, 89.5%);
+    }
+
+    50% {
+        transform: translate(27.7%, 82%);
+    }
+
+    100% {
+        transform: translate(27.7%, 89.5%);
+    }
+}
+
+@keyframes move6 {
+    0% {
+        transform: translate(69.3%, -15%);
+    }
+
+    50% {
+        transform: translate(69.3%, -10%);
+    }
+
+    100% {
+        transform: translate(69.3%, -15%);
+    }
+}
+
+
 /* Main menu
 ------------------------------------------------------------*/
 .c-gnav {
@@ -115,14 +208,15 @@
     position: fixed;
     top: 65px;
     left: 0;
+    z-index: 20;
 
     li {
-        background: url("./_public/assets/img/nav-bg.png") no-repeat;
+        background: url("./_public/assets/img/nav-bg.png") no-repeat center;
         margin-bottom: 15px;
         height: 40px;
-        line-height: 44px;
         width: 198px;
         padding: 0 20px;
+        line-height: 4.28rem;
     }
 
     a {
@@ -132,10 +226,3 @@
     }
 }
 
-.c-gnav--icon {
-    display: none;
-}
-
-.c-gnav--mobile {
-    display: none;
-}

@@ -1,17 +1,5 @@
 <header class="c-header">
-  <div class="c-header__banner">
-    <img src="../_public/assets/img/bg_main.jpg" alt="Banner">
-    <div class="c-header__content">
-      <h3>健栄製薬の</h3>
-      <img src="./_public/assets/img/title.png" alt="Title">
-      <div class="c-line1"></div>
-      <h4>MENTHA OIL</h4>
-      <p>ハッカ油は、毎日の暮ら しを豊かにする</p>
-      <h2>魔法のしずく</h2>
-      <a href="#">ハッカ?ミント?</a>
-    </div>
-  </div>
-  <div class="c-header__droplayer">
+  <div class="c-header__droplayer pc-only">
     <div class="c-header__droplayer1">
       <img src="../_public/assets/img/drop1.png" alt="Drop">
     </div>
@@ -31,8 +19,28 @@
       <img src="../_public/assets/img/drop6.png" alt="Drop">
     </div>
   </div>
+  <div class="c-header__banner">
+    <div class="c-header__image">
+      <img class="pc-only" src="../_public/assets/img/bg_main.jpg" alt="Banner">
+      <img class="sp-only" src="../_public/assets/img/bg_main-mobile.jpg" alt="Banner Mobile">
+    </div>
+      
+    <div class="c-header__content">
+      <h3>健栄製薬の</h3>
+      <img class="pc-only" src="./_public/assets/img/title.png" alt="Title">
+      <img class="sp-only" src="./_public/assets/img/title-mobile.png" alt="Title">
+      <div class="c-line1"></div>
+      <h4>MENTHA OIL</h4>
+      <p>ハッカ油は、毎日の暮ら しを豊かにする</p>
+      <h2>魔法のしずく</h2>
+      <a href="#">ハッカ?ミント?</a>
+    </div>
+  </div>
+  
 </header>
-<nav class="c-gnav">
+
+<!---------------------------- PC Menu ---------------------------->
+<nav class="c-gnav pc-only">
   <ul>
     <li><a href="#">トップ</a></li>
     <li><a href="#">毎日にハッカ油</a></li>
@@ -42,7 +50,32 @@
     <li><a href="#">ハッカ油ムービー</a></li>
   </ul>
 </nav>
-<div class="c-gnav--icon">
-  <img src="../_public/assets/img/menumobile-icon.png" alt="Mobile Menu Icon">
+
+<!-------------------------- Mobile Menu -------------------------->
+<div class="c-gnavicon sp-only" id="openmenu">
+  <div class="c-gnavicon__close">
+    <img src="../_public/assets/img/menumobile-icon.png" alt="Mobile Menu Icon">
+  </div>
+  <div class="c-gnavicon__open">
+    <img src="../_public/assets/img/iconmenu-mobile.png" alt="Icon">
+  </div>
 </div>
+
+<nav class="c-gnavmobile sp-only">
+  <div class="c-gnavmobile__background">
+    <img src="../_public/assets/img/fixed-top.png" alt="leave">
+  </div>
+  <div class="c-gnavmobile__background">
+    <img src="../_public/assets/img/fixed-bottom.png" alt="leave">
+  </div> 
+  
+  <ul>
+    <li><a href="#">トップ</a></li>
+    <li><a href="#">毎日にハッカ油</a></li>
+    <li><a href="#">製品情報</a></li>
+    <li><a href="#">Q&A</a></li>
+    <li><a href="#">ハッカ油コラム</a></li>
+    <li><a href="#">ハッカ油ムービー</a></li>
+  </ul>
+</nav>
 
